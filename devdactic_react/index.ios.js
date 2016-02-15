@@ -3,50 +3,36 @@
  * https://github.com/facebook/react-native
  */
 'use strict';
-import React, {
+
+var React = require('react-native');
+
+var {
   AppRegistry,
-  Component,
   StyleSheet,
   Text,
-  View
-} from 'react-native';
+  View,
+  TouchableHighlight,
+  Component,
+  AlertIOS
+} = React;
 
-class devdactic_react extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Andrew was here!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
+var styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#FFFFFF'
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  buttonText: {
+    fontSize: 18,
+    color: 'white',
+    alignSelf: 'center'
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  button: {
+    height: 44,
+    flexDirection: 'row',
+    backgroundColor: '#48BBEC',
+    alignSelf: 'stretch',
+    justifyContent: 'center'
+  }
 });
-
-AppRegistry.registerComponent('devdactic_react', () => devdactic_react);
