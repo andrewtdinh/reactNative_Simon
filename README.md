@@ -5,8 +5,8 @@ https://devdactic.com/react-native-for-beginners/
 
 To run your app on iOS:  
 ```
-   cd local_path_to_project  
-   react-native run-ios
+   $ cd local_path_to_project  
+   $ react-native run-ios
 ```
    or
 ```
@@ -14,8 +14,8 @@ To run your app on iOS:
    Hit the Run button
 ```
 To run your app on Android:
-   Have an Android emulator running (quickest way to get started), or a device connected  
 ```
-   cd local_path_to_project  
-   react-native run-android
+   Have an Android emulator running (quickest way to get started), or a device connected  
+   $ cd local_path_to_project  
+   $ react-native run-android
 ```
