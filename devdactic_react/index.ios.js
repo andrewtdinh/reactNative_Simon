@@ -36,3 +36,17 @@ var styles = StyleSheet.create({
     justifyContent: 'center'
   }
 });
+
+render() {
+  return (
+    <View style={styles.container}>
+      <Text>
+        Welcome to React Native!
+      </Text>
+      <TouchableHighlight style={styles.button}
+        onPress={this.showAlert}>
+        <Text style={styles.buttonText}>Go</Text>
+      </TouchableHighlight>
+    </View>
+  );
+}
