@@ -50,3 +50,7 @@ render() {
     </View>
   );
 }
+
+showAlert() {
+  AlertIOS.alert('Awesome Alert', 'This is my first React Native alert.', [{text: 'Thanks'}] )
+}
