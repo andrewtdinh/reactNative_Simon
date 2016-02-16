@@ -54,3 +54,5 @@ render() {
 showAlert() {
   AlertIOS.alert('Awesome Alert', 'This is my first React Native alert.', [{text: 'Thanks'}] )
 }
+
+AppRegistry.registerComponent('devdactic_react', () => devdactic_react);
