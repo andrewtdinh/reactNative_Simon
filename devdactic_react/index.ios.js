@@ -37,22 +37,24 @@ var styles = StyleSheet.create({
   }
 });
 
-render() {
-  return (
-    <View style={styles.container}>
-      <Text>
-        Welcome to React Native!
-      </Text>
-      <TouchableHighlight style={styles.button}
-        onPress={this.showAlert}>
-        <Text style={styles.buttonText}>Go</Text>
-      </TouchableHighlight>
-    </View>
-  );
-}
+class devdactic_react extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>
+          Welcome to React Native!
+        </Text>
+        <TouchableHighlight style={styles.button}
+            onPress={this.showAlert}>
+            <Text style={styles.buttonText}>Go</Text>
+          </TouchableHighlight>
+      </View>
+    );
+  }
 
-showAlert() {
-  AlertIOS.alert('Awesome Alert', 'This is my first React Native alert.', [{text: 'Thanks'}] )
-}
+  showAlert() {
+    AlertIOS.alert('Awesome Alert', 'This is my first React Native alert.', [{text: 'Thanks'}] )
+  }
+};
 
 AppRegistry.registerComponent('devdactic_react', () => devdactic_react);
